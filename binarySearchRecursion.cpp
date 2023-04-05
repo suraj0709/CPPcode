@@ -10,6 +10,7 @@ int binarySearch(int *input, int s, int e, int k){
     //element found
     if(input[mid] == k) return mid;
 
+    //recursive call
     if(input[mid] < k) binarySearch(input, mid+1, e, k);
     else binarySearch(input, s, mid-1, k);
 }
